@@ -6,8 +6,15 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: azure;
+
+}
+body, html{
+    overflow-x: hidden;
 }
 
+body{
+    overflow-y: hidden;
+}
 .logo{
     width: 180px;
 }
@@ -45,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 40px 20px 40px;
+    transition: 1s;
 }
 
 .navbar::after{
@@ -65,12 +73,15 @@
     background-image: url(./studytime-logo-zip-file/png/bbblurry.svg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    max-height: 100vh;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .hero{
-    border: 1px solid rgba(255, 255, 255, .1);
+    border: 1.5px solid rgba(255, 255, 255, .1);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -103,6 +114,10 @@ box-icon{
 
 }
 
+
+
+
+
 .words{
 
     height: fit-content;
@@ -110,8 +125,8 @@ box-icon{
 }
 
 .words .image1{
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     position: absolute;
     top: 70%;
     left: -5%;
@@ -121,7 +136,7 @@ box-icon{
 @keyframes pop{
     50%{
         top: 90%;
-        left: -4%;
+        left: -2%;
         transform: rotate(-15deg);
     }
 }
@@ -160,14 +175,30 @@ box-icon{
 
 }
 
-.container.darkmode{
+/*-----LIGHT MODE--------*/
+
+.container.lightmode{
     color: #010105;
     background-color: #F5F5F7;
 }
 
-.title.darkmode{
+.title.lightmode{
+    color: #010105;
+    font-weight: 700;
+}
+
+.headerButton.lightmode{
+    border: 1.5px solid #010105;
     color: #010105;
 }
+
+.headerButton2.lightmode{
+    border: 1.5px solid #010105;
+    color: #010105;
+}
+
+/*-----LIGHT MODE END--------*/
+
 
 
 .toggle-container{
@@ -175,3 +206,214 @@ box-icon{
     justify-content: space-around;
     gap: 70px;
 }
+
+.books{
+    height: fit-content;
+    padding: 20px;
+    background: #010105;
+    
+}
+
+.books-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: hidden;
+    gap: 10px;
+}
+
+.subject{
+    border: 1.5px solid rgba(255, 255, 255, .2);
+    min-height: 50vh;
+    border-radius: 50px;
+    padding: 25px 25px;
+    transition: 1s;
+}
+
+.subject:hover .pattern img{
+    transform: rotate(360deg);
+}
+
+.subject .titre{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.level-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    min-height: 90%;
+    margin-top: 10px;
+}
+
+.level{
+    border: 1px solid rgba(255, 255, 255, .1);
+    height: 60px;
+    border-radius:3px;
+    background: rgb(242, 242, 252, .03);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .1s ease;
+    position: relative;
+}
+
+.level:hover{
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: rgb(242, 242, 252, .05);
+}
+
+@media screen and (max-width: 1204px){
+
+    .books-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .image1, .image2{
+ 
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image1 img{
+        width: 70%;
+    }
+
+    .image2 img{
+        width: 70%;
+    }
+
+    .toggle-container{
+        width: 50px;
+        height: 25px;
+        border: 1px solid rgba(255, 255, 255, .4);
+        border-radius: 40px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .wheel{
+        width: 20px;
+        height: 20px;
+        border: 1px solid white;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 1px;
+        top: 1.5px;
+        transition: .5s;
+    }
+    
+    .wheel.transition{
+        left: 25px;
+    }
+
+
+
+    
+}
+
+
+
+
+.level .icon{
+    transform: rotate(-90deg);
+}
+
+.file{
+    padding: 5px;
+    border: .5px solid rgba(255, 255, 255, .1);
+    transition: .2s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #707076;
+}
+
+.file a{
+    font-size: .9rem;
+    color: #e3e3eb;
+    text-decoration-line:underline;
+}
+
+.file.green{
+    background-color: rgba(3, 192, 74, .1);
+}
+
+.file.blue{
+    background: rgba(0, 150, 255, .1);
+}
+
+.file:hover{
+    border: .5px solid rgba(255, 255, 255, .3);
+}
+
+.files{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    height: 40vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 6px;
+}
+
+.files::-webkit-scrollbar{
+    width: 10px;
+}
+
+.files::-webkit-scrollbar-track{
+    background: #2d2d2f;
+}
+
+.files::-webkit-scrollbar-thumb{
+    background: linear-gradient(#7316d7, #c416d7);
+    border-radius: 10px;
+
+}
+
+.pattern{
+    width: 35px;
+}
+
+.pattern img{
+    width: 100%;
+    transition: 1.4s;
+}
+
+.titre{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 5px;
+    border-radius: 25px;
+    align-items: center;
+    background: rgba(255, 255, 255, .13);
+}
+
+.company{
+    min-height: 85vh;
+    color: #010105;
+}
+
+li img{
+    width: 300px;
+}
+
+
+
+
+
+
