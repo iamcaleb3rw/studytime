@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: azure;
+}
+
+.logo{
+    width: 180px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.toggle-container{
+    width: 70px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.wheel{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    top: 1.5px;
+    transition: .5s;
+}
+
+.wheel.transition{
+    left: 35px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+
+.navbar::after{
+    content: '';
+    position: absolute;
+    height: .8px;
+    background: rgba(255, 255, 255, .3);
+    opacity: .4;
+    top: 70px;
+    right: 30px;
+    left: 30px;
+
+
+}
+
+.container{
+    background-color: #010105;
+    background-image: url(./studytime-logo-zip-file/png/bbblurry.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+.hero{
+    border: 1px solid rgba(255, 255, 255, .1);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+box-icon{
+    transition: .3s ease-out;
+}
+
+.buttons:hover box-icon{
+    transform: translateY(3px);
+}
+
+.buttons a{
+    border: 1px solid;
+    padding: .6rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.words{
+
+    height: fit-content;
+    position: relative;
+}
+
+.words .image1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    animation: pop infinite 2s;
+}
+
+@keyframes pop{
+    50%{
+        top: 90%;
+        left: -4%;
+        transform: rotate(-15deg);
+    }
+}
+
+.image1 img{
+    width: 100%;
+}
+
+.image2 img{
+    width: 100%;
+}
+
+.words .image2{
+    width: 100px;
+    height: 100px;
+    transform: rotate(20deg);
+    position: absolute;
+    top: -50px;
+    right: -5%;
+    animation: bop 2s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes bop{
+    50%{
+        top: -47px;
+    }
+}
+
+.hero .title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    max-width: 700px;
+    text-align: center;
+
+
+}
+
+.container.darkmode{
+    color: #010105;
+    background-color: #F5F5F7;
+}
+
+.title.darkmode{
+    color: #010105;
+}
+
+
+.toggle-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
