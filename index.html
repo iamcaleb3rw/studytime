@@ -9,6 +9,9 @@
     <title>studyTime</title>
 </head>
 <body>
+  <div id="pre-loader">
+    <img src="./images/png/PNGs/loading-2.gif" alt="">
+  </div>
    <div class="container">
         <section class="navbar">
             <div class="logo">
@@ -26,7 +29,7 @@
 
           <div class="buttons">
             <a href="#science-books" class="headerButton">Science books <box-icon name='down-arrow-alt' color="white"></box-icon></a>
-            <a href="#about" class="headerButton2">About</a>
+            <a href="#about" class="headerButton2">About Us</a>
           </div>
         </section>
    </div> 
@@ -239,7 +242,7 @@
     </div>
    </section>
 
-    <div class="developer" id="#about">
+    <div class="developer" id="about">
       
         <div class="all-wrapper">
           <div class="row one">
@@ -317,19 +320,14 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
     <script>
-      // const lenis = new Lenis()
+      
+      let preLoader = document.getElementById("pre-loader");
 
-      // lenis.on('scroll', (e) => {
-      // console.log(e)
-      // })
+      window.addEventListener('load', function(){
 
-      // function raf(time) {
-      // lenis.raf(time)
-      // requestAnimationFrame(raf)
-      // }
-
-      // requestAnimationFrame(raf)
-
+        preLoader.style.display = 'none';
+        
+      })
     </script>
 </body>
 </html>
