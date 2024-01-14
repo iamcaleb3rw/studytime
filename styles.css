@@ -746,3 +746,28 @@ q{
 .imagefooter img{
     width: 100%;
 }
+
+.site a{
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+.site a:hover{
+    text-decoration: underline;
+}
+
+#pre-loader{
+    height: 100vh;
+    width: 100%;
+    background: #191F26;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pre-loader img{
+    width: 500px;
+}
+
