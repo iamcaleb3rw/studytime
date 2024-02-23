@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="icon" type="image/x-icon" href="./studytime-logo-zip-file/png/logo-no-background (1).png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
     <title>studyTime</title>
 </head>
 <body>
@@ -26,8 +28,8 @@
           </div>
 
           <div class="buttons">
-            <a href="#science-books" class="headerButton">Science books <box-icon name='down-arrow-alt' color="white"></box-icon></a>
-            <a href="#about" class="headerButton2">About Us</a>
+            <a href="#science-books" class="headerButton" id="step-one">Science books <box-icon name='down-arrow-alt' color="white"></box-icon></a>
+            <a href="#past-papers" class="headerButton2" id="past-exams">Past Papers</a>
           </div>
         </section>
    </div> 
@@ -35,7 +37,7 @@
    <section class="books">
     <div class="science-books" id="science-books">
       <div class="books-grid">
-        <div class="subject">
+        <div class="subject" id="step-two" data-aos="fade-right">
           <div class="titre">
             <div class="word">Physics</div>
             <div class="pattern">
@@ -43,21 +45,129 @@
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Physics/S1 Physics SB.pdf">Physics S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/S1 Physics TG .pdf">Physics S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Physics/Physics Learners book S2.pdf">Physics S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/S2 Physics Teachers Guide .pdf">Physics S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Physics/Physics S3 SB.pdf">Physics S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/Physics S3 TG.pdf">Physics S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Physics/Physics S4 SB.pdf">Physics S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/Physics S4 TG.pdf">Physics S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Physics/PHYSICS S5 SB.pdf">Physics S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/physics-s5-teacher-guide-rwanda-education-board.pdf">Physics S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Physics/S6 Physics  SB  (5).pdf">Physics S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Physics/S6 Physics  teacher guide (1).pdf">Physics S6 Teacher's Guide</a></div>
+            <div class="file green">
+             <div class="left-section">
+              Physics S1 student Book
+             </div>
+
+             <div class="right-section">
+              <a href="./BOOKS/Physics/S1 Physics SB.pdf"  class="first-button" target="_blank" id="step-three"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Physics/S1 Physics SB.pdf"  class="second-button" id="step-four"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+             </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S1 Teacher's Guide Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/S1 Physics TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/S1 Physics TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Physics S2 student's Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/Physics Learners book S2.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/Physics Learners book S2.pdf Physics SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S2 Teacher's Guide
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/S2 Physics Teachers Guide .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/S2 Physics Teachers Guide .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Physics S3 student Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/Physics S3 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/Physics S3 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S3 Teacher's Guide
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/Physics S3 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/Physics S3 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Physics S4 student Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/Physics S4 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/Physics S4 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S4 Teacher's Guide
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/Physics S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/Physics S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Physics S5 student Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/PHYSICS S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/PHYSICS S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S5 Teacher's Guide
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/physics-s5-teacher-guide-rwanda-education-board.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/physics-s5-teacher-guide-rwanda-education-board.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Physics S6 student Book
+               </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/S6 Physics  SB  (5).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/S6 Physics  SB  (5).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Physics S6 Teacher's Guide
+              </div>
+  
+               <div class="right-section">
+                <a href="./BOOKS/Physics/S6 Physics  teacher guide (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Physics/S6 Physics  teacher guide (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+               </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in" data-aos-delay="100">
           <div class="titre">
             <div class="word">Mathematics</div>
             <div class="pattern">
@@ -65,286 +175,1379 @@
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Maths/Maths S1 SB.pdf">Mathematics S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Maths S1 TG.pdf">Mathematics S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Maths/Maths S2 SB.pdf">Mathematics S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Maths Senior 2 TG.pdf">Mathematics S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Maths/Mathematics Senior 3.pdf">Mathematics S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Maths Senior 3 TG.pdf">Mathematics S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Maths/Core Math S4 SB.pdf">Mathematics S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Mathematics S4 TG.pdf">Mathematics S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Maths/MATH S5 SB Core.pdf">Mathematics S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Advanced Mathematics S.5 TG.pdf">Mathematics S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Maths/Advanced Mathematics S6 SB (1).pdf">Mathematics S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Maths/Advanced Mathematics S6 TG (1).pdf">Mathematics S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Maths S1 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Maths S1 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Mathematics S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Maths S1 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Maths S1 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Maths S2 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Maths S2 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Mathematics S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Maths Senior 2 TG (1).pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Maths Senior 2 TG (1).pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Mathematics Senior 3.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Mathematics Senior 3.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Mathematics S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Maths Senior 3 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Maths Senior 3 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Core Math S4 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Core Math S4 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Mathematics S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Mathematics S4 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Mathematics S4 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/MATH S5 SB Core.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/MATH S5 SB Core.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Mathematics S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Maths/Advanced Mathematics S.5 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Maths/Advanced Mathematics S.5 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Mathematics S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Advanced Mathematics S6 SB (1).pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Advanced Mathematics S6 SB (1).pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Mathematics S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Maths/Advanced Mathematics S6 TG (1).pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Maths/Advanced Mathematics S6 TG (1).pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="fade-left" data-aos-delay="100">
           <div class="titre">
             <div class="word">Chemistry</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-8.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Chemistry/S1 Chemistry SB (1).pdf">Chemistry S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/Chemistry S1 TG.pdf">Chemistry S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Chemistry/Chemistry S2 SB.pdf">Chemistry S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/Chemistry S2 TG.pdf">Chemistry S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Chemistry/Chemistry S3  SB.pdf">Chemistry S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/Chemstry S 3 teacher guide.pdf">Chemistry S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Chemistry/chemistry S4 SB.pdf">Chemistry S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/chemistry TG S4.pdf">Chemistry S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Chemistry/Chemistry S5 SB.pdf">Chemistry S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/CHEMISTRY S5 TG.pdf">Chemistry S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Chemistry/Chemistry S6 SB.pdf">Chemistry S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Chemistry/Chemistry S6 TG.pdf">Chemistry S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Chemistry S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/S1 Chemistry SB (1).pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/S1 Chemistry SB (1).pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Chemistry S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S1 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S1 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+               Chemistry S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S2 SB_compressed.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S2 SB_compressed.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Chemistry S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S2 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S2 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Chemistry S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S3  SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S3  SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Chemistry S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemstry S 3 teacher guide.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemstry S 3 teacher guide.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Chemistry S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/chemistry S4 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/chemistry S4 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Chemistry S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/chemistry TG S4.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/chemistry TG S4.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Chemistry S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S5 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S5 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Chemistry S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Chemistry/CHEMISTRY S5 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Chemistry/CHEMISTRY S5 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Chemistry S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S6 SB.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S6 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Chemistry S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Chemistry/Chemistry S6 TG.pdf" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Chemistry/Chemistry S6 TG.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="fade-right">
           <div class="titre">
-            <div class="word">Computer Science</div>
-            <div class="pattern"><img src="./images/png/icons/shape-10.svg" alt=""></div>
+            <div class="word">Computer</div>
+            <div class="pattern">
+              <img src="./images/png/icons/shape-5.svg" alt="">
+            </div>
           </div>
           <div class="files">
-            
-            <div class="file green"><a download href="./BOOKS/Computer Science/Computer Science S4 SB.pdf">Computer Science S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Computer Science/Computer Science Senior 4 TG.pdf">Computer Science S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Computer Science/Secondary Schools_Computer Science_Student's Book_Senior Five (5).pdf">Computer Science S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Computer Science/Computer Science S5 TG (2).pdf">Computer Science S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Computer Science/Computer science S6 SB.pdf">Computer Science S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Computer Science/Computer Science S6 TG.pdf">Computer Science S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Computer S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Computer Science/Computer Science S4 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Computer Science/Computer Science S4 SB.pdf" class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Computer S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Computer Science/Computer Science Senior 4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Computer Science/Computer Science Senior 4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Computer S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Computer Science/Secondary Schools_Computer Science_Student's Book_Senior Five (5).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Computer Science/Secondary Schools_Computer Science_Student's Book_Senior Five (5).pdf S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Computer S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Computer Science/Computer Science S5 TG (2).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Computer Science/Computer Science S5 TG (2).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Computer S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Computer Science/Computer science S6 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Computer Science/Computer science S6 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Computer S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Computer Science/Computer Science S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Computer Science/Computer Science S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in">
           <div class="titre">
             <div class="word">Biology</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-13.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S1 SB_compressed.pdf">Biology S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S1 TG .pdf">Biology S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S2 SB_compressed.pdf">Biology S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S2 TG .pdf">Biology S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S3 SB_compressed.pdf">Biology S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S3 TG .pdf">Biology S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S4  SB_compressed.pdf">Biology S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S4 TG.pdf">Biology S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S5 SB  (1)_compressed-compressed.pdf">Biology S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S5 TG _compressed.pdf">Biology S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Biology/Biology S6 Student Book -compressed.pdf">Biology S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Biology/Biology S6 TG.pdf">Biology S6 Teacher's Guide</a></div>
-          </div>
-        </div>
-        <div class="subject">
-          <div class="titre">
-            <div class="word">Economics</div>
-            <div class="pattern">
-              <img src="./images/png/icons/shape-16.svg" alt="">
+            <div class="file green">
+              <div class="left-section">
+                Biology S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S1 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S1 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Biology S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S1 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S1 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Biology S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S2 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S2 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Biology S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S2 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S2 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Biology S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S3 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S3 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Biology S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S3 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S3 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Biology S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S4  SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S4  SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Biology S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Biology S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S5 SB  (1)_compressed-compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S5 SB  (1)_compressed-compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Biology S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Biology/Biology S5 TG _compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Biology/Biology S5 TG _compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Biology S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S6 Student Book -compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S6 Student Book -compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Biology S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Biology/Biology S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Biology/Biology S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
             </div>
           </div>
-          <div class="files">
-            <div class="file green"><a download href="./BOOKS/Economics/Economics S4 SB.pdf">Economics S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Economics/Economics S4 TG.pdf">Economics S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Economics/Economics S5 SB.pdf">Economics S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Economics/Economics S5 TG.pdf">Economics S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Economics/Economics S6 SB.pdf">Economics S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Economics/Economics S6 TG.pdf">Economics S6 Teacher's Guide</a></div>
-          </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="fade-left">
           <div class="titre">
             <div class="word">Geography</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-17.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Geography/GEOGRAPHY S1 SB (1)_compressed.pdf">Geography S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Geography/Geography and Environment S1 TG (4).pdf">Geography S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Geography/Geography S 2 SB_compressed.pdf">Geography S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Geography/Geography and Environment S2 TG.pdf">Geography S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Geography/Geography S3 SB_compressed.pdf">Geography S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Geography/Geography and Environment S3 TG (2).pdf">Geography S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Geography/Geography S4 SB-compressed.pdf">Geography S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Geography/Geography S4 TG (1).pdf">Geography S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Geography/Geography S5 SB.pdf">Geography S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Geography/Geography S5 TG (1).pdf">Geography S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Geography/Geography SB S6_compressed.pdf">Geography S6 Student's Book</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/GEOGRAPHY S1 SB (1)_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/GEOGRAPHY S1 SB (1)_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Geography S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography and Environment S1 TG (4).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography and Environment S1 TG (4).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography S 2 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography S 2 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Geography S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography and Environment S2 TG.pdf="step-three" class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography and Environment S2 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography S3 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography S3 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Geography S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography and Environment S3 TG (2).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography and Environment S3 TG (2).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography S4 SB-compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography S4 SB-compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Geography S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography S4 TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography S4 TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Geography S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Geography/Geography S5 TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Geography/Geography S5 TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Geography S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Geography/Geography SB S6_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Geography/Geography SB S6_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div> 
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="fade-right">
           <div class="titre">
             <div class="word">History</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-18.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/History/HISTORY  CITIZENSHIP S1 SB .pdf">History S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY  CITIZENSHIP S1 TG .pdf">History S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/History/HISTORY   CITIZENSHIP S2 SB.pdf">History S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY  CITIZENSHIP S2 TG (1).pdf">History S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/History/HISTORY  CITIZENSHIP S3 SB.pdf">History S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY CITIZENSHIP  S3 TG.pdf">History S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/History/History S4 (SB).pdf">History S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY S4 TG .pdf">History S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/History/History S5 SB .pdf">History S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY S5 TG .pdf">History S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/History/HISTORY S6 SB_compressed.pdf">History S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/History/HISTORY S6 TG.pdf">History S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                History S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY  CITIZENSHIP S1 SB .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY  CITIZENSHIP S1 SB .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                History S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY  CITIZENSHIP S1 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY  CITIZENSHIP S1 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                History S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY   CITIZENSHIP S2 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY   CITIZENSHIP S2 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                History S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY  CITIZENSHIP S2 TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY  CITIZENSHIP S2 TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                History S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY  CITIZENSHIP S3 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY  CITIZENSHIP S3 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                History S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY CITIZENSHIP  S3 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY CITIZENSHIP  S3 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                History S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/History S4 (SB).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/History S4 (SB).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                History S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY S4 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY S4 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                History S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/History S5 SB .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/History S5 SB .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              History S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/History/HISTORY S5 TG .pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/History/HISTORY S5 TG .pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                History S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY S6 SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY S6 SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                History S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/History/HISTORY S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/History/HISTORY S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in">
           <div class="titre">
             <div class="word">Entrepreneurship</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-26.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S1_compressed.pdf">Entrepreneurship S1 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/ENTREPRENEURSHIP S1 TG.pdf">Entrepreneurship S1 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S2_compressed.pdf">Entrepreneurship S2 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S2 TG (1).pdf">Entrepreneurship S2 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/S3 Entrepreneurship SB_compressed.pdf">Entrepreneurship S3 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S3 TG.pdf">Entrepreneurship S3 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S4_SB.pdf">Entrepreneurship S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S4 TG.pdf">Entrepreneurship S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S5_SB.pdf">Entrepreneurship S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S5_TG.pdf">Entrepreneurship S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship/Entrepreneurship S6_SB (1).pdf">Entrepreneurship S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship/Entreprenuership S6 TG (2).pdf">Entrepreneurship S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S1 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S1_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S1_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S1 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/ENTREPRENEURSHIP S1 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/ENTREPRENEURSHIP S1 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S2 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S2_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S2_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S2 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S2 TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S2 TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S3 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/S3 Entrepreneurship SB_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/S3 Entrepreneurship SB_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S3 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S3 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S3 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S4_SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S4_SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S5_SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S5_SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S5 Teacher's Guide            
+              </div>
+
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S5_TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S5_TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entrepreneurship S6_SB (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entrepreneurship S6_SB (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div> 
+
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship S6 Teacher's Guide            
+              </div>
+
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship/Entreprenuership S6 TG (2).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship/Entreprenuership S6 TG (2).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="subject">
+        <div class="subject" data-aos="fade-left">
           <div class="titre">
             <div class="word">General Studies</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/GSCS/S4_GSCS_Student Book.pdf">General Studies S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/GSCS/S4_GSCS_Teacher Guide.pdf">General Studies S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/GSCS/General Studies and Comm Skills S5 SB.pdf">General Studies S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/GSCS/General Studies Senior 5 TG.pdf">General Studies S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/GSCS/General Studies and Comm. Skills S6 SB.pdf">General Studies S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/GSCS/GSCS S6 TG.pdf">General Studies S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                General Studies S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/GSCS/S4_GSCS_Student Book.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/GSCS/S4_GSCS_Student Book.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                General Studies S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/GSCS/S4_GSCS_Teacher Guide.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/GSCS/S4_GSCS_Teacher Guide.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                General Studies S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/GSCS/General Studies and Comm Skills S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/GSCS/General Studies and Comm Skills S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              General Studies S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/GSCS/General Studies Senior 5 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/GSCS/General Studies Senior 5 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                General Studies S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/GSCS/General Studies and Comm. Skills S6 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/GSCS/General Studies and Comm. Skills S6 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                General Studies S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/GSCS/GSCS S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/GSCS/GSCS S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subject" data-aos="fade-right">
+          <div class="titre">
+            <div class="word">Economics</div>
+            <div class="pattern">
+              <img src="./images/png/icons/shape-5.svg" alt="">
+            </div>
+          </div>
+          <div class="files">
+            <div class="file green">
+              <div class="left-section">
+                Economics S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Economics/Economics S4 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Economics/Economics S4 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Economics S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Economics/Economics S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Economics/Economics S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Economics S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Economics/Economics S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Economics/Economics S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Economics S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Economics/Economics S5 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Economics/Economics S5 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Economics S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Economics/Economics S6 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Economics/Economics S6 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Economics S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Economics/Economics S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Economics/Economics S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in">
+          <div class="titre">
+            <div class="word">Maths for Acc</div>
+            <div class="pattern">
+              <img src="./images/png/icons/shape-5.svg" alt="">
+            </div>
+          </div>
+          <div class="files">
+            <div class="file green">
+              <div class="left-section">
+                Maths for Acc S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Math for accounting/Maths SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Math for accounting/Maths SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Maths for Acc S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Math for accounting/Maths TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Math for accounting/Maths TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Maths for Acc S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Math for accounting/Math for Accounting S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Math for accounting/Math for Accounting S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Maths for Acc S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Math for accounting/MATHEMATICS S5TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Math for accounting/MATHEMATICS S5TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Maths for Acc S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Math for accounting/Math for ACC S6 SB (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Math for accounting/Math for ACC S6 SB (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Maths for Acc S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Math for accounting/S6 TG MATHEMATICS.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Math for accounting/S6 TG MATHEMATICS.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject" data-aos="fade-left">
           <div class="titre">
             <div class="word">Taxation</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Taxation/TAXATION SB BOOK New.pdf">Taxation S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Taxation/Taxation S4 TG.pdf">Taxation S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Taxation/taxation S5_Student Book.pdf">Taxation S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Taxation/Taxation S5 TG BOOK.pdf">Taxation S5 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Taxation S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Taxation/TAXATION SB BOOK New.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Taxation/TAXATION SB BOOK New.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Taxation S4 Teachers Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Taxation/Taxation S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Taxation/Taxation S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Taxation S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Taxation/taxation S5_Student Book.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Taxation/taxation S5_Student Book.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+               Taxation S5 Teacher's Guide            
+              </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Taxation/Taxation S5 TG BOOK.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Taxation/Taxation S5 TG BOOK.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div>
+          </div>
+            
           </div>
         </div>
 
-        <div class="subject">
+        <div class="subject" data-aos="fade-right">
           <div class="titre">
-            <div class="word">Entrep for ACC</div>
+            <div class="word">Entrep for Acc</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship for accounting/Entrep s4SB for ACC_compressed.pdf">Acc Entrepreneurship S4 Student's book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship TG_compressed.pdf">Acc Entrepreneurship S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship for accounting/ENTREPRENEURSHIP S5 SB.pdf">Acc Entrepreneurship S5 Student's book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S5 TG.pdf">Acc Entrepreneurship S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Entrepreneurship for accounting/SB S6 Entrepreneurship (1).pdf">Acc Entrepreneurship S6 Student's book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S6 TG.pdf">Acc Entrepreneurship S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship for Acc S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship for accounting/Entrep s4SB for ACC_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship for accounting/Entrep s4SB for ACC_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship for Acc S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship TG_compressed.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship TG_compressed.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship for Acc S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship for accounting/ENTREPRENEURSHIP S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship for accounting/ENTREPRENEURSHIP S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Entrepreneurship for Acc S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S5 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S5 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Entrepreneurship for Acc S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship for accounting/SB S6 Entrepreneurship (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship for accounting/SB S6 Entrepreneurship (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Entrepreneurship for Acc S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Entrepreneurship for accounting/Entrepreneurship S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in">
           <div class="titre">
-            <div class="word">Math for ACC</div>
+            <div class="word">Accounting Mgt</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Math for accounting/Maths SB.pdf">Math for Accounting S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Math for accounting/Maths TG.pdf">Math for Accounting S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Math for accounting/Math for Accounting S5 SB.pdf">Math for Accounting S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Math for accounting/MATHEMATICS S5TG.pdf">Math for Accounting S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Math for accounting/Math for ACC S6 SB (1).pdf">Math for Accounting S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Math for accounting/S6 TG MATHEMATICS.pdf">Math for Accounting S6 Teacher's Guide</a></div>
+            <div class="file green">
+              <div class="left-section">
+                Management Acc S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Management Accounting/MANAGEMENT ACCOUNTING_STUDENT BOOK22 (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Management Accounting/MANAGEMENT ACCOUNTING_STUDENT BOOK22 (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Management Acc S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Management Accounting/M.A TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Management Accounting/M.A TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Management Acc S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Management Accounting/Management Accounting S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Management Accounting/Management Accounting S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Management Acc S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Management Accounting/Management Accounting S5 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Management Accounting/Management Accounting S5 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Management Acc S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Management Accounting/Management Accounting  S6 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Management Accounting/Management Accounting  S6 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Management Acc S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Management Accounting/Management Accounting TG S6.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Management Accounting/Management Accounting TG S6.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subject" data-aos="fade-left">
+          <div class="titre">
+            <div class="word">Financial Accounting</div>
+            <div class="pattern">
+              <img src="./images/png/icons/shape-5.svg" alt="">
+            </div>
+          </div>
+          <div class="files">
+            <div class="file green">
+              <div class="left-section">
+                Financial Accounting S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Financial Accounting/Financial Accounting S4 SB Experimental Version.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Financial Accounting/Financial Accounting S4 SB Experimental Version.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Financial Accounting S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Financial Accounting/Financial Accounting S4 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Financial Accounting/Financial Accounting S4 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                Financial Accounting S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Financial Accounting/S5 Financial accounting  SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Financial Accounting/S5 Financial accounting  SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              Financial Accounting S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/Financial Accounting/S5 Financial accounting TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/Financial Accounting/S5 Financial accounting TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                Financial Accounting S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Financial Accounting/S6 SB FINANCIAL ACCOUNTING (2).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Financial Accounting/S6 SB FINANCIAL ACCOUNTING (2).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="subject">
+        <div class="subject" data-aos="fade-right">
           <div class="titre">
-            <div class="word">Financial ACC</div>
+            <div class="word">ICT for Acc</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/GSCS/S4_GSCS_Student Book.pdf">Financial Accounting S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/GSCS/S4_GSCS_Teacher Guide.pdf">Financial Accounting S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/GSCS/General Studies and Comm Skills S5 SB.pdf">Financial Accounting  S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/GSCS/General Studies Senior 5 TG.pdf">Financial Accounting  S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/GSCS/General Studies and Comm. Skills S6 SB.pdf">Financial Accounting  S6 Student's Book</a></div>
+            <div class="file green">
+              <div class="left-section">
+                ICT for Acc S4 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/ICT In Accounting/ICT in Accounting S4 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/ICT In Accounting/ICT in Accounting S4 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                ICT for Acc S4 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/ICT In Accounting/ICT in Accounting S4 TG (1).pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/ICT In Accounting/ICT in Accounting S4 TG (1).pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file green">
+              <div class="left-section">
+                ICT for Acc S5 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/ICT In Accounting/ICT in Accounting S5 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/ICT In Accounting/ICT in Accounting S5 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue"><div class="left-section">
+              ICT for Acc S5 Teacher's Guide            
+            </div>
+
+            <div class="right-section">
+              <a href="./BOOKS/ICT In Accounting/ICT in Accouting S5 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+              <a download href="./BOOKS/ICT In Accounting/ICT in Accouting S5 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+            </div></div>
+            <div class="file green">
+              <div class="left-section">
+                ICT for Acc S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/ICT In Accounting/ICT in Accounting S6 SB.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/ICT In Accounting/ICT in Accounting S6 SB.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
+            <div class="file blue">
+              <div class="left-section">
+                Computer S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/ICT In Accounting/ICT in Accounting S6 TG.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/ICT In Accounting/ICT in Accounting S6 TG.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="subject">
+        <div class="subject" data-aos="zoom-in">
           <div class="titre">
-            <div class="word">ACC Management</div>
+            <div class="word">Auditing</div>
             <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+              <img src="./images/png/icons/shape-5.svg" alt="">
             </div>
           </div>
           <div class="files">
-            <div class="file green"><a download href="./BOOKS/Management Accounting/MANAGEMENT ACCOUNTING_STUDENT BOOK22 (1).pdf">Accounting Management S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Management Accounting/M.A TG (1).pdf">Management Accounting S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Management Accounting/Management Accounting S5 SB.pdf">Management Accounting S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Management Accounting/Management Accounting S5 TG.pdf">Management Accounting  S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/Management Accounting/Management Accounting  S6 SB.pdf">Management Accounting  S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Management Accounting/Management Accounting TG S6.pdf">Management Accounting S6 Student's Book</a></div>
-          </div>
-        </div>
-
-        <div class="subject">
-          <div class="titre">
-            <div class="word">ICT for ACC</div>
-            <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+            <div class="file green">
+              <div class="left-section">
+                Auditing S6 Student's book
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Auditing/Auditing S6 Student Book.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS/Auditing/Auditing S6 Student Book.pdf"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
             </div>
-          </div>
-          <div class="files">
-            <div class="file green"><a download href="./BOOKS/ICT In Accounting/ICT in Accounting S4 SB.pdf">ICT for Accounting S4 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/ICT In Accounting/ICT in Accounting S4 TG (1).pdf">ICT for Accounting S4 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/ICT In Accounting/ICT in Accounting S5 SB.pdf">ICT for Accounting S5 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/ICT In Accounting/ICT in Accouting S5 TG.pdf">ICT for Accounting S5 Teacher's Guide</a></div>
-            <div class="file green"><a download href="./BOOKS/ICT In Accounting/ICT in Accounting S6 SB.pdf">ICT for Accounting S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/ICT In Accounting/ICT in Accounting S6 TG.pdf">ICT for Accounting S6 Student's Book</a></div>
-          </div>
-        </div>
-
-        <div class="subject">
-          <div class="titre">
-            <div class="word">Auditing for ACC</div>
-            <div class="pattern">
-              <img src="./images/png/icons/shape-31.svg" alt="">
+            <div class="file blue">
+              <div class="left-section">
+                Auditing S6 Teacher's Guide
+              </div>
+  
+              <div class="right-section">
+                <a href="./BOOKS/Auditing/Auditing S6 Teacher_s Guide.pdf"  class="first-button" target="_blank"><box-icon name='book-open' color="#ffffff" size="17px"></box-icon>View</a>
+                <a download href="./BOOKS
+                /Auditing/"  class="second-button"><box-icon name='download' color="#ffffff" size="17px"></box-icon>Download</a>
+              </div>
             </div>
-          </div>
-          <div class="files">
-            <div class="file green"><a download href="./BOOKS/Auditing/Auditing S6 Student Book.pdf">Auditing for Accounting S6 Student's Book</a></div>
-            <div class="file blue"><a download href="./BOOKS/Auditing/Auditing S6 Teacher_s Guide.pdf">Auditing for Accounting S6 Teacher's Guide</a></div>
           </div>
         </div>
 
@@ -353,7 +1556,6 @@
    </section>
 
     <div class="developer" id="about">
-      
         <div class="all-wrapper">
           <div class="row one">
             <div class="lside">
@@ -414,7 +1616,7 @@
           </div>
 
           <div class="team">
-            <div class="grid-wrapper">
+            <div class="grid-wrapper" id="step-four">
               <div class="grid-member">
                 <div class="introduction">
                   <div class="pic">
@@ -436,21 +1638,21 @@
               <div class="grid-member">
                 <div class="introduction">
                   <div class="pic">
-                    <img src="./images/png/PNGs/ryan.jpg" alt="">
+                    <img src="./levi.jpg" alt="">
                   </div>
                   <div class="role-played">
                     <div class="job"> Chief Technology Officer</div>
-                    <div class="names">DUSHIME Ryan</div>
+                    <div class="names">Ryan Levi</div>
                   </div>
                 </div>
                 <div class="body">
-                  Ryan is a hardworking human being with a dose of innovation and creativity
+                  Levi is a Creative Man with a persistent Mentality to make Progress into Projects.
                 </div>
                 <div class="socials">
-                  <div class="social"><a href="https://www.instagram.com/levivxn/" target="_blank"><box-icon type='logo' name='instagram-alt' color='azure'></box-icon></a></div>
-                  <div class="social"><a href="" target="_blank"><a href="https://wa.me/0787874699" target="_blank"><box-icon type='logo' name='whatsapp' color='azure'></box-icon></a></div>
-                  <div class="social"><a href="" target="_blank"><box-icon name='twitter' type='logo' color='azure'></box-icon></a></div>
-                  <div class="social"><a href="" target="_blank"><box-icon name='facebook-circle' type='logo' color='azure'></box-icon></a></div>
+                  <div class="social"><a href="https://www.instagram.com/cwlevi/" target="_blank"><box-icon type='logo' name='instagram-alt' color='azure'></box-icon></a></div>
+                  <div class="social"><a href="https://wa.me/0791996796" target="_blank"><box-icon type='logo' name='whatsapp' color='azure'></box-icon></a></div>
+                  <div class="social"><a href="https://twitter.com/levivxn" target="_blank"><box-icon name='twitter' type='logo' color='azure'></box-icon></a></div>
+                  <div class="social"><a href="https://www.facebook.com/profile.php?id=100095314352331" target="_blank"><box-icon name='facebook-circle' type='logo' color='azure'></box-icon></a></div>
                 </div>
               </div>
               <div class="grid-member">
@@ -459,7 +1661,7 @@
                     <img src="./images/png/PNGs/xmas.jpg" alt="">
                   </div>
                   <div class="role-played">
-                    <div class="job"> Chief Operating Officer</div>
+                    <div class="job"> Chief Marketing Officer</div>
                     <div class="names">BYIRINGIRO Christmas</div>
                   </div>
                 </div>
@@ -478,19 +1680,100 @@
         </div>
     </div>
 
+    <div class="timer">
+      <div class="heading">Past Papers coming On 25th/February/2024 </div>
+      <div class="anime"><img src="./User interface research.gif" alt=""></div>
+    </div>
+    
     <section class="footer">
-      <div class="headfooter">
-        The mobile and tablet application is under development, we'll notify when completed <br>Thanks!!
-      </div>
-
-      <div class="imagefooter">
-        <img src="./images/png/PNGs/new.png" alt="">
+      <div class="inner-footer">
+        <div class="top-part">
+          <div class="icones">
+            <div class="icone"><a href="#"><box-icon type='logo' color="#ffffff" name='instagram'></box-icon></a></div>
+            <div class="icone"><a href="#"><box-icon type='logo' color="#ffffff" name='twitter'></box-icon></a></div>
+            <div class="icone"><a href="#"><box-icon type='logo' color="#ffffff" name='whatsapp'></box-icon></a></div>
+          </div>
+          <div class="liens"></div>
+        </div>
+        <div class="bottom-part">
+          <div class="trademark">Copyright &copy;, passBridge&trade; 2024</div>
+        </div>
       </div>
     </section>
+
+    
    
-   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-   <script src="path-to-the-script/splide-extension-grid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="path-to-the-script/splide-extension-grid.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+    <script>
+      const intro = introJs();
+      intro.setOptions({
+        exitOnEsc : true,
+        dontShowAgain: true,
+        steps: [
+          {
+            intro: "Hello!!👋, <br><br> Welcome to our site! let's take a tour<br><br>Click the \"Esc\" key to skip the tour",
+            tooltipClass: 'customTooltip'
+          }, 
+          {
+            element: '#step-one',
+            tooltipClass: 'customTooltip',
+            intro: 'Click here when you want to view available science books',
+            position: 'bottom-right'
+          },
+          {
+            element: '#past-exams',
+            tooltipClass: 'customTooltip',
+            intro: 'You can click here to view Past National Exams 📝'
+          },
+          {
+            element: "#step-two",
+            intro: 'Books are grouped by subject!',
+            tooltipClass: 'customTooltip',
+            position: 'right'
+          }, 
+          {
+            element: '#step-three',
+            intro: 'You can click on the "View" Button to read the book online without downloading!',
+            tooltipClass: 'customTooltip',
+            position: 'top'
+          }, 
+          {
+            element: '#step-four',
+            intro: 'Click here to download a book you want to read offline',
+            tooltipClass: 'customTooltip'
+          },
+          {
+            intro: '"Success is the sum of all efforts, repeated day-in & day out." <br><br> Happy prep!! 📚✏️',
+            tooltipClass: 'customTooltip'
+          },
+          {
+            intro: 'Let the reading begin✨✨ <br><br> <img src="./reading.gif" style="width: 100%"/>',
+            tooltipClass: 'customTooltip'
+          }
+        ]
+      });
+      intro.start();
+
+      const handleOnMouseMove = e => {
+         const{currentTarget: target} = e;
+         const rect = target.getBoundingClientRect(), 
+         x = e.clientX - rect.left, 
+         y = e.clientY - rect.top;
+
+         target.style.setProperty("--mouse-x", `${x}px`);
+         target.style.setProperty("--mouse-y", `${y}px`);
+      }
+
+      for(const card of document.querySelectorAll(".sujet")){
+        card.onmousemove = e =>handleOnMouseMove(e);
+      }
+
+      AOS.init();
+    </script>
 </body>
 </html>
