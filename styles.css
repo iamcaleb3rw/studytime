@@ -8,8 +8,17 @@
     color: azure;
 
 }
+
+.customTooltip * {
+    color: #4a4a4a;
+    font-size: 18px
+}
+
 body, html{
     overflow-x: hidden;
+}
+
+html{
     scroll-behavior: smooth;
 }
 
@@ -366,11 +375,13 @@ box-icon{
         flex-direction: column;
         justify-content: center;
     }
-
-    .footer .headfooter{
-
-        font-size: 23px;
+    
+    .file{
+        flex-direction: column;
+        justify-content: flex-start;
     }
+
+
 
     
 }
@@ -384,11 +395,16 @@ box-icon{
 
 .file{
     padding: 5px;
-    border: .5px solid rgba(255, 255, 255, .1);
+    border: .5px solid rgba(255, 255, 255, .3);
     transition: .2s ease;
     cursor: pointer;
     border-radius: 8px;
     color: #707076;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .file a{
@@ -399,10 +415,14 @@ box-icon{
 
 .file.green{
     background-color: rgba(3, 192, 74, .1);
+    min-height: fit-content;
+    padding: 4px;
 }
 
 .file.blue{
     background: rgba(0, 150, 255, .1);
+    min-height: fit-content;
+    padding: 4px;
 }
 
 .file:hover{
@@ -470,7 +490,7 @@ li img{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 0 20px 20PX;
+    border-radius: 0;
 }
 
 .gradient{
@@ -721,39 +741,11 @@ q{
 }
 
 .footer{
-    background: #FFFFFF;
-    background-image: url(./images/png/PNGs/Grad_10.png);
-    height: fit-content;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-
+    background:#0b0a0a;
+    min-height: 40vh;
 }
 
 
-.headfooter{
-    color: #1c1c23;
-    border: 2px solid rgba(255, 255, 255, .13);
-    margin-top: 7vh;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    background: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    letter-spacing: -2px;
-}
-
-.imagefooter{
-    max-width: 900px;
-}
-
-.imagefooter img{
-    width: 100%;
-}
 
 .site a{
     text-decoration: none;
@@ -908,4 +900,189 @@ q{
 
 }
 
+.past-papers{
+    min-height: 200vh;
+    background: #010105;
+    position: relative;
+}
+
+.containeur{
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.sujets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+}
+
+.sujet{
+    height: 50vh;
+    border-radius: 5px;
+    position: relative;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.sujet::before, 
+.sujet > .card-border
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+.sujet::before{
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%);
+    z-index: 3;
+}
+
+.sujet > .card-border{
+    background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.3), transparent 40%);
+    z-index: 1;
+}
+
+.sujet:hover::before{
+    opacity: 1;
+}
+
+.sujet > .card-content {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    background-color: rgb(23, 23, 23);
+    border-radius: inherit;
+    position: relative;
+    margin: 1px;
+    z-index: 2;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.past{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.des{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.top-part{
+    height: 36vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones{
+    display: flex;
+    gap: 45px;
+}
+
+.icone{
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .05);
+    flex-wrap: wrap;
+}
+
+.bottom-part{
+    background: #010105;
+    height: 4vh;
+}
+
+.trademark{
+    text-align: center;
+}
+
+.files .right-section a{
+    background:#5a48f8;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+.files .right-section{
+    display: flex;
+    gap: 12px;
+}
+
+.second-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.first-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.past-papers::before{
+    position: absolute;
+    content: 'Past Papers coming on 25th/02/2024';
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background: rgba(23, 23, 23, .4);
+    backdrop-filter: blur(5px);
+    z-index: 99;
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer{
+    background: #010105;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.timer .heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.anime{
+    max-width: 400px;
+}
+
+.anime img{
+    width: 100%;
+}
 
