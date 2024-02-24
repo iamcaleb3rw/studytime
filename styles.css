@@ -38,6 +38,7 @@
     justify-content: center;
     padding: 10px;
     width: 100%;
+
 }
 
 .solution-slide{
@@ -50,7 +51,7 @@
     border-radius: 20px;
     background: rgba(255, 255, 255, .04);
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 40px
 }
 
 .sol-buttons{
@@ -74,7 +75,7 @@
     font-weight: 700;
 }
 .calculator-anim{
-    width: 100px;
+    width: 80px;
 }
 
 .calculator-anim img{
@@ -82,12 +83,11 @@
 }
 
 .pencil-anim{
-    width: 100px;
+    width: 80px;
 }
 .pencil-anim img{
     width: 100%;
 }
-
 body, html{
     overflow-x: hidden;
 }
