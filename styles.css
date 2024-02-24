@@ -14,6 +14,63 @@
     font-size: 18px
 }
 
+.solution{
+    height: 50vh;
+    background: #010105;
+    border: 2px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.solution-slide{
+    border: 2px solid rgb(255, 255, 252, .1);
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 15px;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .04);
+    flex-wrap: wrap;
+}
+
+.sol-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sol-buttons a{
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5a48f8;
+    border-radius: 10px;
+}
+
+.sol-name{
+    font-size: clamp(1.3rem,.8rem, .5rem);
+    font-weight: 700;
+}
+.calculator-anim{
+    width: 100px;
+}
+
+.calculator-anim img{
+    width: 100%;
+}
+
+.pencil-anim{
+    width: 100px;
+}
+.pencil-anim img{
+    width: 100%;
+}
+
 body, html{
     overflow-x: hidden;
 }
