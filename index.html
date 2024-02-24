@@ -42,8 +42,8 @@
         <div class="solution-slide">
           <div class="sol-name">Mathematics Mid-Term <br> revision Questionnaire</div>
           <div class="sol-buttons">
-            <a href="./REVISION  EXERCISES.pdf" target="_blank" id="solut1">Read Online</a>
-            <a href="./REVISION  EXERCISES.pdf" download target="_blank" id="solut2">Download</a>
+            <a href="./REVISION  EXERCISES.pdf" target="_blank" id="prob1">Read Online</a>
+            <a href="./REVISION  EXERCISES.pdf" download target="_blank" id="prob2">Download</a>
           </div>
         </div>
         <div class="solution-slide">
@@ -63,7 +63,7 @@
    <section class="books">
     <div class="science-books" id="science-books">
       <div class="books-grid">
-        <div class="subject" id="step-two" data-aos="fade-right">
+        <div class="subject" id="step-two">
           <div class="titre">
             <div class="word">Physics</div>
             <div class="pattern">
@@ -193,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div class="subject" data-aos="zoom-in" data-aos-delay="100">
+        <div class="subject">
           <div class="titre">
             <div class="word">Mathematics</div>
             <div class="pattern">
@@ -321,7 +321,7 @@
             </div>
           </div>
         </div>
-        <div class="subject" data-aos="fade-left" data-aos-delay="100">
+        <div class="subject">
           <div class="titre">
             <div class="word">Chemistry</div>
             <div class="pattern">
@@ -1746,12 +1746,22 @@
             tooltipClass: 'customTooltip'
           }, 
           {
-            intro:"Click here if you want to read the answers of the mid-term Math exercises",
+            intro: "Click here to <strong>Read</strong> the Math revision questionnaire online",
+            tooltipClass: 'customTooltip',
+            element: '#prob1'
+          },
+          {
+            intro: "Click here to <strong>Download</strong> the Math revision questionnaire",
+            tooltipClass: 'customTooltip',
+            element: '#prob2'
+          },
+          {
+            intro: "Click here to <strong>Read</strong> the Math revision answers sheet",
             tooltipClass: 'customTooltip',
             element: '#solut1'
           },
           {
-            intro: "Click here if you want to download the answers of the mid-term Math exercises",
+            intro: "You can also click here to <strong>Download</strong> the Math revision answers sheet",
             tooltipClass: 'customTooltip',
             element: '#solut2'
           },
@@ -1759,7 +1769,6 @@
             element: '#step-one',
             tooltipClass: 'customTooltip',
             intro: 'Click here when you want to view available science books',
-            position: 'bottom-right'
           },
           {
             element: '#past-exams',
@@ -1767,16 +1776,16 @@
             intro: 'You can click here to view Past National Exams 📝'
           },
           {
-            element: "#step-two",
-            intro: 'Books are grouped by subject!',
+            element: '#step-two',
+            intro: "Books are arranged according to subjects",
             tooltipClass: 'customTooltip',
-            position: 'right'
-          }, 
+            position: "right"
+          },
+
           {
             element: '#step-three',
             intro: 'You can click on the "View" Button to read the book online without downloading!',
             tooltipClass: 'customTooltip',
-            position: 'top'
           }, 
           {
             element: '#step-four',
