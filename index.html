@@ -34,27 +34,30 @@
         </section>
    </div> 
 
-    <section class="solution">
+   <section class="solution">
      <div class="pencil-anim">
       <img src="./pencil-dynamic-color.png" alt="">
      </div>
-     <div class="solution-slide">
-      <div class="sol-name">Mathematics Mid-Term revision Answers</div>
-      <div class="sol-buttons">
-        <a href="./answers.pdf" target="_blank">Read Online</a>
-        <a href="./answers.pdf" download target="_blank">Download</a>
-      </div>
-     </div>
-     <div class="solution-slide">
-        <div class="sol-name">Mathematics Mid-Term <br> revision Answers</div>
-        <div class="sol-buttons">
-          <a href="./answers.pdf" target="_blank" id="solut1">Read Online</a>
-          <a href="./answers.pdf" download target="_blank" id="solut2">Download</a>
+     <div class="flex">
+        <div class="solution-slide">
+          <div class="sol-name">Mathematics Mid-Term <br> revision Questionnaire</div>
+          <div class="sol-buttons">
+            <a href="./REVISION  EXERCISES.pdf" target="_blank" id="solut1">Read Online</a>
+            <a href="./REVISION  EXERCISES.pdf" download target="_blank" id="solut2">Download</a>
+          </div>
         </div>
-    </div>
-     <div class="calculator-anim">
-      <img src="./calculator-dynamic-color.png" alt="">
-     </div>
+        <div class="solution-slide">
+            <div class="sol-name">Mathematics Mid-Term <br> revision Answers</div>
+            <div class="sol-buttons">
+              <a href="./answers.pdf" target="_blank" id="solut1">Read Online</a>
+              <a href="./answers.pdf" download target="_blank" id="solut2">Download</a>
+            </div>
+        </div>
+      </div>
+      
+      <div class="calculator-anim">
+        <img src="./calculator-dynamic-color.png" alt="">
+      </div>
    </section>
 
    <section class="books">
@@ -1736,7 +1739,7 @@
       const intro = introJs();
       intro.setOptions({
         exitOnEsc : true,
-        dontShowAgain: true,
+        dontShowAgain: false,
         steps: [
           {
             intro: "Hello!!👋, <br><br> Welcome to our site! let's take a tour<br><br>Click the \"Esc\" key to skip the tour",
@@ -1751,7 +1754,7 @@
             intro: "Click here if you want to download the answers of the mid-term Math exercises",
             tooltipClass: 'customTooltip',
             element: '#solut2'
-          },  
+          },
           {
             element: '#step-one',
             tooltipClass: 'customTooltip',
