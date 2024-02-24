@@ -30,25 +30,27 @@
 }
 
 .solution{
-    height: 50vh;
+    min-height: 50vh;
     background: #010105;
     border: 2px solid rgba(255,255,255,0.06);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 10px;
+    width: 100%;
 }
 
 .solution-slide{
     border: 2px solid rgb(255, 255, 252, .1);
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    max-width: 700px;
     padding: 15px;
     align-items: center;
     border-radius: 20px;
     background: rgba(255, 255, 255, .04);
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .sol-buttons{
