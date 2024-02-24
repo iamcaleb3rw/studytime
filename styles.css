@@ -14,6 +14,21 @@
     font-size: 18px
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solution a{
+    transition: .6s;
+}
+
+.solution a:hover{
+    background: #3827b5;
+    transform: scale(1.03);
+}
+
 .solution{
     height: 50vh;
     background: #010105;
